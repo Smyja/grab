@@ -1,6 +1,7 @@
 # grab
-This is a script that scrapes the longitude and latitude for any restaurant in Manilla on food.grab.com, location can be adjusted.
+This is a script that scrapes the longitude and latitude for any restaurant in Manila on food.grab.com, location can be adjusted.
 
+#### Search Result page
 ![Preview](https://user-images.githubusercontent.com/20070770/139863640-4802f0b2-37c0-4a36-bd5c-78d023faddbb.png)
 
 ### Prerequisites

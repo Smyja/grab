@@ -14,9 +14,10 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
+#Set the path for the web driver  
 driver = webdriver.Chrome('C:\\Users\\USER\\Downloads\\chromed\\chromedriver')
-driver.get('https://food.grab.com/ph/')
 
+driver.get('https://food.grab.com/ph/')
 
 #Look for the class
 search_box = driver.find_element_by_class_name("ant-input")
@@ -29,14 +30,19 @@ search_box.send_keys(Keys.ENTER)
 
 driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[3]/div[2]/div/button').click()
 
-
+#update the url, since it changes
 changed_url='https://food.grab.com/ph/en/restaurants'
+
 
 submit = driver.page_source
 time.sleep(10)
 p=driver.find_element_by_class_name('ant-btn.ant-btn-block').click()
 
 clicks = 0
+"""
+The code block below handles the clicking of the Load more button, if this is to be used the sleep time would need to be increased because it takes a while for the items to be loaded. 
+
+"""
 #
 #while clicks < 3:
 #    try:
@@ -46,14 +52,16 @@ clicks = 0
 #        clicks = clicks + 1
 #    
 #    except:
-#        print("Number of pages scraped: ",count)
+#        print("button has been clicked",count,"times")
 #        
 #
-url_elements = driver.find_elements_by_xpath("//a[contains(@href, '/ph/en/restaurant')]")
+
 
 time.sleep(10)
+#get the source code of the page
 submitt = driver.page_source
 
+#Use beautiful soup to scrape the source code
 soup = BeautifulSoup(submitt, "html.parser")
 s=soup.select("div.ant-row-flex.RestaurantListRow___1SbZY")
 s = soup.find('div', attrs={'class':'ant-layout'})
@@ -65,7 +73,7 @@ for data in s:
 print("https://food.grab.com"+l)
 
 
-#test
+#Loop through the urls to get the longitude and latitude
 
 for urls in l:
     driver.get(urls)
@@ -83,4 +91,5 @@ for urls in l:
     for key,value in values.items():
         print(key)
     print(key)
+    #Longitude and latitude are in a dictionary
     print(values[key]['latlng'])

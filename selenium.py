@@ -33,8 +33,8 @@ driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[3]/div[2]/div/button'
 #update the url, since it changes
 changed_url='https://food.grab.com/ph/en/restaurants'
 
+driver.get(changed_url)
 
-submit = driver.page_source
 time.sleep(10)
 p=driver.find_element_by_class_name('ant-btn.ant-btn-block').click()
 

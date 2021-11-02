@@ -1,5 +1,5 @@
 # grab
-This is a script that scrapes the longitude and latitude on food.grab.com
+This is a script that scrapes the longitude and latitude for any restaurant in Manilla on food.grab.com, location can be adjusted.
 
 ### Prerequisites
 - Python

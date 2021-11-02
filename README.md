@@ -26,4 +26,5 @@ You have scraped 40 links
 {'latitude': 14.599262918622557, 'longitude': 120.9900343411054}
 {'latitude': 14.6007231, 'longitude': 120.98439648}
 {'latitude': 14.599968222336393, 'longitude': 120.98002192}
-{'latitude': 14.599834675, 'longitude': 120.980555425}```
+{'latitude': 14.599834675, 'longitude': 120.980555425}
+```

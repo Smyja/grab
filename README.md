@@ -10,6 +10,7 @@ This is a script that scrapes the longitude and latitude for any restaurant in M
 - Chrome Browser and Chrome Driver
 - VPN and the Browser extension for the VPN should be installed in your Chrome browser. 
 - Beautiful Soup.
+- Change the driver path to match yours. 
 
 ### Notes
 - Avoid making too many requests. There is a limit and a blocker for webscraping implemented by grab.com that's why you need to increase the timeout.

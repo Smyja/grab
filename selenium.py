@@ -82,11 +82,7 @@ for urls in l:
     soup = BeautifulSoup(a, "html.parser")
     s = soup.find('script', type='application/json')
     a=json.loads(s.text)
-    lis=[]
-    filename='wa.json'
-    f = open(filename,'w')
-    f.write(json.dumps(a))
-    f.close()
+
     values=a["props"]["initialReduxState"]["pageRestaurantDetail"]["entities"]
     for key,value in values.items():
         print(key)

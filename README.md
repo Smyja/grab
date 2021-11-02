@@ -2,6 +2,8 @@
 This is a script that scrapes the longitude and latitude on food.grab.com
 
 ### Prerequisites
+- Python
+- Selenium
 - Chrome Browser and Chrome Driver
 - VPN and the Browser extension for the VPN should be installed in your Chrome browser. 
 - Beautiful Soup.
@@ -11,6 +13,7 @@ This is a script that scrapes the longitude and latitude on food.grab.com
 - Vpn location can be any country in Asia. 
 - Selenium is highly unstable, so at times you might get some errors. Do not fret :) just restart the script. 
 - Running the driver as Headless strangely doesn't work properly because of the proxy problem and since i am using a vpn extension you need to use actual proxy addresses to get it working. So the GUI has to pop up. 👀
+- You can adjust the ```sliced_links``` depending on how many restaurants longitude and latitude you want to scrape.
 
 ### Output
 ```

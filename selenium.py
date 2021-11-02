@@ -92,7 +92,7 @@ for data in s:
         a=l.append(baseurl + links)
 print(l)
 print("You have scraped",len(l),"links")
-#Links scraped is 8, because of the time it will take. changing ```l[:8]``` to ```len(l)``` is all you need if you want to scrape everything
+#Links scraped is 8, because of the time it will take. changing l[:8] to len(l) should be all you need if you want to scrape everything
 sliced_list=l[:8] 
 
 

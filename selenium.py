@@ -65,7 +65,7 @@ submitt = driver.page_source
 #Use beautiful soup to scrape the source code
 soup = BeautifulSoup(submitt, "html.parser")
 s=soup.select("div.ant-row-flex.RestaurantListRow___1SbZY")
-s = soup.find('div', attrs={'class':'ant-layout'})
+#s = soup.find('div', attrs={'class':'ant-layout'})
 l=[]
 for data in s:
     yourl=data.findAll('a')

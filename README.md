@@ -8,3 +8,4 @@ This is a script that scrapes the longitude and latitude on food.grab.com
 ### Notes
 - Avoid making too many requests. There is limit and blocker for webscraping implemented by grab.com that's why you need to increase the timeout.
 - Vpn location can be any country in Asia. 
+- Selenium is highly unstable, so at times you might get some errors. Do not fret :) just restart the script. 
